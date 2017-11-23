@@ -123,7 +123,7 @@ static NSString *const kOPTosURIKey = @"op_tos_uri";
     kIssuerKey,
     kAuthorizationEndpointKey,
     kTokenEndpointKey,
-    kJWKSURLKey,
+//    kJWKSURLKey,
     kResponseTypesSupportedKey,
     kSubjectTypesSupportedKey,
     kIDTokenSigningAlgorithmValuesSupportedKey
@@ -144,8 +144,8 @@ static NSString *const kOPTosURIKey = @"op_tos_uri";
   // Check required URL fields are valid URLs.
   NSArray *requiredURLFields = @[
     kIssuerKey,
-    kTokenEndpointKey,
-    kJWKSURLKey
+    kTokenEndpointKey//,
+//    kJWKSURLKey
   ];
 
   for (NSString *field in requiredURLFields) {
